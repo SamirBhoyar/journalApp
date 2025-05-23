@@ -1,0 +1,4 @@
+server:
+  port:8082
+
+# This file can user for specify properties/configure of prod env.like mongodb instance,port & etc. specific to prod env.

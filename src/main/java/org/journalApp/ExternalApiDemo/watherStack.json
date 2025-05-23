@@ -1,0 +1,10 @@
+
+{ "string":"command:-this is how json look, this file is not getting use any where in code",
+
+  "Current":
+  {
+    "temperature": 36,
+    "weather_Description": ["smokey"],
+    "feelslike": 36
+  }
+}

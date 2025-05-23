@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: dev
+
+server:
+#  port: 8081
+  servlet:
+    context-path: /app
+
+
+#profileing concept: we are using .yml file to run app on "dev and prod" env.
+# we can include common property in this file and env specific in application-dev.yml and application-prod.yml,
+# we have to mention "spring.profile.active:" in this .yml
+#---------------------------------
+weather:
+  api:
+    key: "b4e80d9fb9f0d7fb14d0ee4cccc28950"
+
+#--------------------------------
+
+#Logging in spring boot through .yml file:- (// you can also use .xml file to log, that why I comment this)
+
+##Package Leve Config
+#logging:
+#  level:
+#    org:
+#      journalApp:  DEBUG  # this will print on console log which is "Severity >= DEBUG"
+
+
+# class level config
+#logging:
+#  level:
+#    org:
+#      journalApp:
+#        service:
+#          UserService: TRACE # this will print on console log which is "Severity >= DEBUG"
+#        #  UserService: OFF  #will not print log for this specific class
+#
+#root level config
+#logging:
+#  level:
+#    root: ERROR # this will print on console log which is "Severity >= ERROR"
+#   # root: OFF #will not print log. including(Root,package and class)
